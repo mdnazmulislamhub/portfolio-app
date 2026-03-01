@@ -67,13 +67,13 @@
         .profile h1 {
             font-size: 14px;
             font-weight: 700;
-            color: #1a1a1a;
+            color: #0f172a;
             margin-bottom: 2px;
         }
 
         .profile .title {
             font-size: 9px;
-            color: #1a1a1a;
+            color: #475569;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -88,7 +88,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1.2px;
-            color: #1a1a1a;
+            color: #475569;
             margin-bottom: 5px;
             display: flex;
             align-items: center;
@@ -166,7 +166,7 @@
         .skills-category-title {
             font-size: 7pt;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #475569;
             margin-bottom: 3px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -180,7 +180,7 @@
 
         .skill-tag {
             background: #f1f5f9;
-            color: #1a1a1a;
+            color: #334155;
             padding: 2px 5px;
             border-radius: 3px;
             font-size: 6.5pt;
@@ -199,16 +199,22 @@
         }
 
         .sidebar-card {
-            background: transparent;
-            border: none;
-            border-radius: 0;
-            padding: 6px 0 6px 16px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 8px;
             position: relative;
             overflow: hidden;
         }
 
         .sidebar-card::before {
-            content: none;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            border-radius: 2px 0 0 2px;
         }
 
         .sidebar-card.edu::before {
@@ -254,13 +260,13 @@
         .sidebar-card-title {
             font-size: 7.2pt;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #0f172a;
             line-height: 1.3;
         }
 
         .sidebar-card-sub {
             font-size: 6.5pt;
-            color: #1a1a1a;
+            color: #475569;
             font-weight: 500;
             margin-bottom: 3px;
             padding-left: 0px;
@@ -282,20 +288,19 @@
 
         .sidebar-card-tag.blue {
             background: #f1f5f9;
-            color: #1a1a1a;
+            color: #334155;
             border: 1px solid #e2e8f0;
             font-weight: 500;
         }
 
         .sidebar-card-tag.amber {
-            background: #f1f5f9;
-            color: #1a1a1a;
-            border: 1px solid #e2e8f0;
+            background: #fef9c3;
+            color: #713f12;
         }
 
         .sidebar-card-tag.gold {
             background: #f1f5f9;
-            color: #1a1a1a;
+            color: #334155;
             border: 1px solid #e2e8f0;
             font-weight: 500;
         }
@@ -331,7 +336,7 @@
 
         /* Main Content */
         .main {
-            padding: 20px 16px;
+            padding: 20px 24px;
             overflow: hidden;
         }
 
@@ -385,7 +390,7 @@
         }
 
         .job:last-child::after {
-            display: block;
+            display: none;
         }
 
         .job-header {
@@ -702,7 +707,7 @@
                 </div>
             </div>
 
-            <div class="sidebar-section" style="margin-top: 12px;">
+            <div class="sidebar-section">
                 <h3>Education</h3>
                 <div class="sidebar-card edu">
                     <div class="sidebar-card-header">
@@ -757,7 +762,7 @@
                             <span class="level-dot filled"></span>
                             <span class="level-dot filled"></span>
                             <span class="level-dot filled"></span>
-                            <span class="level-dot filled"></span>
+                            <span class="level-dot"></span>
                         </div>
                     </div>
                 </div>
