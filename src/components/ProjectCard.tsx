@@ -49,12 +49,14 @@ export default function ProjectCard({ project, index, isInView, featured = false
             <div className="flex gap-2">
               <a
                 href={project.links.github}
+                target="_blank"
                 className="p-2 rounded-lg bg-gray-100 dark:bg-dark-800 text-dark-500 dark:text-dark-400 hover:bg-orange-500 hover:text-white transition-all duration-300"
               >
                 <Github className="w-4 h-4" />
               </a>
               <a
                 href={project.links.live}
+                target="_blank"
                 className="p-2 rounded-lg bg-gray-100 dark:bg-dark-800 text-dark-500 dark:text-dark-400 hover:bg-amber-500 hover:text-white transition-all duration-300"
               >
                 <ExternalLink className="w-4 h-4" />
@@ -118,12 +120,14 @@ export default function ProjectCard({ project, index, isInView, featured = false
         <div className="flex gap-2">
           <a
             href={project.links.github}
+            target="_blank"
             className="p-2 text-dark-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
           >
             <Github className="w-5 h-5" />
           </a>
           <a
             href={project.links.live}
+            target="_blank"
             className="p-2 text-dark-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
           >
             <ExternalLink className="w-5 h-5" />
