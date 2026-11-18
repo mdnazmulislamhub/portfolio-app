@@ -66,7 +66,7 @@ export default function Education() {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
               className="card relative overflow-hidden"
             >
               {/* Award Ribbon */}
