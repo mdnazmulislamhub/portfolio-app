@@ -156,6 +156,28 @@ export const projects = [
       github: "#",
     },
   },
+  {
+    id: 6,
+    title: "Shadibari.com",
+    subtitle: "Bilingual Matrimonial Platform",
+    description: `Full-stack matrimonial web app for finding a life partner, built with a modern
+      Inertia.js + Vue 3 frontend on Laravel. Members create biodatas, search with powerful
+      filters, and connect through likes and proposals, in Bangla and English.`,
+    image: "/projects/shadibari.jpg",
+    technologies: ["Laravel", "Inertia.js", "Vue 3", "Tailwind CSS", "MySQL", "Firebase (FCM)", "Axios"],
+    features: [
+      "Bilingual (Bangla / English) responsive UI with a custom peach and magenta design system",
+      "Quick, advanced, biodata-code and special-category search with a popup filter form",
+      "Biodata profiles with completion tracking, admin approval, and hide / delete controls",
+      "Likes, proposals, mutual-match badges, and a highlighted-biodata auto-scrolling slider",
+      "Real-time notification bell with Firebase push notifications and unread counts",
+      "Package purchase, free registration flow, video guide, and PWA install support",
+    ],
+    links: {
+      live: "https://shadibari.com",
+      github: "#",
+    },
+  },
 ];
 
 export const education = {
@@ -167,9 +189,17 @@ export const education = {
   cgpa: "3.61 out of 4.00",
 };
 
-export const publication = {
+export const publications = [
+  {
   title: "Hybrid Feature Vector Space-Based Ensemble Machine Learning Approach For Sentiment Analysis on Amazon Product Reviews",
   venue: "ICCIT-2021, Bangladesh",
   award: "Dr. Fatema Rashid Best Paper Award, 2021",
-  link: "#",
-};
+  link: "https://ieeexplore.ieee.org/document/9689876",
+  },
+  {
+    title: "Deepfake-Resilient Semi-Fragile Audio Embedding with Adaptive Bandlimited Spread-Spectrum Embedding and Neural Provenance Verification",
+    venue: "ICSIPA-2026, Malaysia",
+    award: "",
+    link: "https://ieeexplore.ieee.org/document/11720123",
+  },
+];

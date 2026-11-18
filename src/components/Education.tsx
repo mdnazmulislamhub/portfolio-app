@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { GraduationCap, Award, MapPin, Calendar, ExternalLink, Trophy } from 'lucide-react'
-import { education, publication } from '../data/profile'
+import { education, publications } from '../data/profile'
 
 export default function Education() {
   const ref = useRef(null)
@@ -62,6 +62,7 @@ export default function Education() {
             </motion.div>
 
             {/* Publication Card */}
+            {publications.map((publication, index) => (
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -104,6 +105,7 @@ export default function Education() {
                 </a>
               </div>
             </motion.div>
+              ))}
           </div>
         </motion.div>
       </div>
