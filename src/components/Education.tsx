@@ -69,12 +69,14 @@ export default function Education() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="card relative overflow-hidden"
             >
-              {/* Award Ribbon */}
-              <div className="absolute top-0 right-0">
-                <div v-if="publication.award" className="bg-gradient-to-r from-amber-500 to-yellow-500 text-dark-900 text-xs font-bold px-8 py-1 transform rotate-45 translate-x-6 translate-y-3 shadow-lg">
-                  AWARD
+                {/* Award Ribbon */}
+              {publication.award && (
+                <div className="absolute top-0 right-0">
+                  <div className="bg-gradient-to-r from-amber-500 to-yellow-500 text-dark-900 text-xs font-bold px-8 py-1 transform rotate-45 translate-x-6 translate-y-3 shadow-lg">
+                    AWARD
+                  </div>
                 </div>
-              </div>
+                )}
 
               <div className="flex items-center gap-3 mb-5">
                 <div className="p-3 rounded-xl bg-gradient-to-br from-amber-500 to-yellow-500 shadow-lg shadow-amber-500/30">
@@ -89,10 +91,12 @@ export default function Education() {
                 </h4>
                 <p className="text-dark-600 dark:text-dark-300 text-sm">{publication.venue}</p>
 
-                <div v-if="publication.award" className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/30 rounded-lg border border-amber-300 dark:border-amber-700">
-                  <Award className="w-4 h-4 text-amber-500" />
-                  <span className="text-amber-700 dark:text-amber-300 font-semibold text-sm">{publication.award}</span>
-                </div>
+                {publication.award && (
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/30 rounded-lg border border-amber-300 dark:border-amber-700">
+                    <Award className="w-4 h-4 text-amber-500" />
+                    <span className="text-amber-700 dark:text-amber-300 font-semibold text-sm">{publication.award}</span>
+                  </div>
+                )}
 
                 <a
                   href={publication.link}
