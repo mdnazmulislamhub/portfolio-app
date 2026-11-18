@@ -71,7 +71,7 @@ export default function Education() {
             >
               {/* Award Ribbon */}
               <div className="absolute top-0 right-0">
-                <div className="bg-gradient-to-r from-amber-500 to-yellow-500 text-dark-900 text-xs font-bold px-8 py-1 transform rotate-45 translate-x-6 translate-y-3 shadow-lg">
+                <div v-if="publication.award" className="bg-gradient-to-r from-amber-500 to-yellow-500 text-dark-900 text-xs font-bold px-8 py-1 transform rotate-45 translate-x-6 translate-y-3 shadow-lg">
                   AWARD
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Education() {
                 </h4>
                 <p className="text-dark-600 dark:text-dark-300 text-sm">{publication.venue}</p>
 
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/30 rounded-lg border border-amber-300 dark:border-amber-700">
+                <div v-if="publication.award" className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/30 rounded-lg border border-amber-300 dark:border-amber-700">
                   <Award className="w-4 h-4 text-amber-500" />
                   <span className="text-amber-700 dark:text-amber-300 font-semibold text-sm">{publication.award}</span>
                 </div>
